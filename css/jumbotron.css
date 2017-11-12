@@ -7,7 +7,7 @@ body {
 /*SEARCH*/
 
 .box{
-    margin: 100px auto;
+    /*margin: 50px auto;*/
     width: 300px;
     height: 50px;
 }
@@ -77,3 +77,27 @@ body {
 
 
 /*//end search//*/
+/*a:active {*/
+  /*!*color: aquamarine;*!*/
+/*}*/
+/*a:hover {*/
+  /*color: gray;*/
+  /*!*text-decoration: underline overline;*!*/
+
+
+a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+a:link { /* Essentially means a[href], or that the link actually goes somewhere */
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
