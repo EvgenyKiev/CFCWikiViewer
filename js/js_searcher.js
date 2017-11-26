@@ -63,14 +63,27 @@ window.addEventListener("load", function(event) {
 
                     var d1 = document.getElementById('insert');
 
+                    if (paras) {
+                        for (var i = 0; i < jpars[1].length; i++) {
+
+                            Array.prototype.forEach.call(paras, function (para) {
+                                if (para.getAttribute("class") === "row")
+                                    para.parentNode.removeChild(para);
+
+                                console.log('if (paras) delete')
 
 
-                    // function insertt () {
-                    //     d1.insertAdjacentHTML('beforeend',innahtml );
-                    // }
+                            });
+                        }
 
 
-                    //  cycle
+                    }
+
+                    insertt ();
+                    console.log ('true insert')
+
+
+                    /// end insert
 
                     function insertt () {
 
@@ -84,35 +97,6 @@ window.addEventListener("load", function(event) {
 
                         }
                     }
-
-
-                    //end   cycle
-
-
-
-
-
-
-
-                    if (paras) {
-
-                        Array.prototype.forEach.call(paras, function (para) {
-                            if (para.getAttribute("class") === "row")
-                                para.parentNode.removeChild(para);
-
-
-                        });
-
-                        insertt ();
-                    }
-
-
-                    else {
-                        insertt ()
-                    }
-
-
-                    /// end insert
 
 
 
