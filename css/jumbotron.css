@@ -76,13 +76,11 @@ body {
 }
 
 
-/*//end search//*/
-/*a:active {*/
-  /*!*color: aquamarine;*!*/
-/*}*/
-/*a:hover {*/
-  /*color: gray;*/
-  /*!*text-decoration: underline overline;*!*/
+
+#block {
+
+  padding-left: 30%;
+}
 
 
 a {
