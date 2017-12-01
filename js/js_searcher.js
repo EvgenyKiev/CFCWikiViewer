@@ -1,37 +1,22 @@
-window.addEventListener("load", function(event) {
-    console.log("All resources finished loading!");
+window.addEventListener("load", function() {
+    //console.log("All resources finished loading!");
 
     var form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
-        var aaa=form.elements.ssearchh.value
+        var aaa=form.elements.ssearchh.value;
 
-        console.log("Look up: ",aaa);
+        //console.log("Look up: ",aaa);
         //console.log(wiki)
 
         var wiki='https://en.wikipedia.org/w/api.php?action=opensearch&search=%'+aaa+'&prop=info&format=json&origin=*&inprop=url';
 
-
-
         var xhr = new XMLHttpRequest();
         xhr.open("GET", wiki, true);
-        xhr.onload = function (e) {
+        xhr.onload = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     //console.log(xhr.responseText);
-
-                    var jpars=JSON.parse(xhr.responseText)
-
-
-                    for(  var i=0;i<jpars[1].length;i++) {
-                        // var title= jpars[1][i];
-                        // var snipp=jpars[2][i];
-                        // var link=jpars[3][i];
-
-
-                    }
-
-
-
+                    var jpars=JSON.parse(xhr.responseText);
 
                     ///insert
 
@@ -50,19 +35,13 @@ window.addEventListener("load", function(event) {
 
                                 console.log('if (paras) delete')
 
-
                             });
                         }
-
-
                     }
 
                     insertt ();
                     // console.log ('true insert')
-
-
                     /// end insert
-
                     function insertt () {
 
                         for (var i = 0; i < jpars[1].length; i++) {
@@ -76,55 +55,16 @@ window.addEventListener("load", function(event) {
                         }
                     }
 
-
-
-
-
-                   // console.log (title +' ' + snipp +' '+link)
-
-
-
-
-
-
-
-
-
-
-
-
-
                 } else {
                     console.error(xhr.statusText);
                 }
             }
         };
-        xhr.onerror = function (e) {
+        xhr.onerror = function () {
             console.error(xhr.statusText);
         };
         xhr.send(null);
 
-
-
-
-
-
-
-
-
-
         event.preventDefault();
     });
-
-
-
-
-
-
-
-
-
-
-
-
 });
