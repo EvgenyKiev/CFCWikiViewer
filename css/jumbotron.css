@@ -1,8 +1,30 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
-}
+  background-color: #333;
+  background-image: url(../img/triangles-download.svg) ;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
+}
+a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+a:link { /* Essentially means a[href], or that the link actually goes somewhere */
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
 
 /*SEARCH*/
 
@@ -28,18 +50,14 @@ body {
   border: none;
   font-size: 14pt;
   float: left;
-  color: #262626;
+  /*color: #262626;*/
   padding-left: 35px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
 
-  -webkit-transition: width .55s ease;
-  -moz-transition: width .55s ease;
-  -ms-transition: width .55s ease;
-  -o-transition: width .55s ease;
-  transition: width .55s ease;
+
 }
 
 
@@ -57,7 +75,7 @@ body {
   z-index: 1;
   color: #4f5b66;
 
-  /*///костыль*/
+  /*///не понял как, но с этим работает*/
   right: 90%;
 }
 
@@ -80,22 +98,19 @@ body {
 #block {
 
   padding-left: 30%;
+  z-index: 99;
 }
 
+#glass {
 
-a {
-  text-decoration: none; /* Убираем подчеркивание у ссылок */
-}
-a:link { /* Essentially means a[href], or that the link actually goes somewhere */
-  color: blue;
-}
-a:visited {
-  color: purple;
-}
-a:hover {
-  color: green;
-  text-decoration: none;
-}
-a:active {
-  color: red;
+  background-color: white;
+  position: relative;
+  /*filter: blur(1px);*/
+  opacity: 0.3;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 1;
+  /*display: block;*/
+  /*position: absolute;*/
+  /*content: ' ';*/
 }

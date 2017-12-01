@@ -1,0 +1,277 @@
+/*
+ * Globals
+ */
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* typography, etc. */
+h1 {
+    font: 4em / 1.4 'Russo One', sans-serif;
+    margin: 0 1em;
+    text-align: center;
+    color: black;
+
+}
+
+p {
+    font: 1.4em / 1.4 'Merriweather', serif;
+    max-width: 30em;
+    margin: 0.5em auto;
+    padding: 0 1em;
+    color: black;
+
+}
+
+
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    /*background-color: #333;*/
+}
+
+/*body {*/
+
+    /*background-image: url( ' ') ;*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*z-index: 0;*/
+/*}*/
+
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+    box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: bold;
+    color: rgba(255,255,255,.5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+    .nav-masthead {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 62em) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 42rem;
+    }
+}
+
+
+/*SEARCH
+
+
+ */
+
+.box{
+    margin: 100px auto;
+    width: 300px;
+    height: 50px;
+}
+
+
+ /*search-w*/
+.container-2{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.container-2 input#search{
+    width: 120px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 14pt;
+    float: left;
+    /*color: #262626;*/
+    padding-left: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+
+    /*-webkit-transition: width .55s ease;*/
+    /*-moz-transition: width .55s ease;*/
+    /*-ms-transition: width .55s ease;*/
+    /*-o-transition: width .55s ease;*/
+    /*transition: width .55s ease;*/
+}
+
+
+.container-2 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+
+
+.container-2 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+
+    /*///костыль*/
+    right: 90%;
+}
+
+
+.container-2 input#search:focus, .container-2 input#search:active{
+    outline:none;
+    width: 300px;
+}
+
+.container-2:hover input#search{
+    width: 300px;
+}
+
+.container-2:hover .icon{
+    color: #93a2ad;
+}
+
+
+/*////*/
