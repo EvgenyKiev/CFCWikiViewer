@@ -56,8 +56,6 @@ a:active {
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
-
-
 }
 
 
@@ -74,8 +72,6 @@ a:active {
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
-
-  /*///не понял как, но с этим работает*/
   right: 90%;
 }
 
