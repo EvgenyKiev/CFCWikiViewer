@@ -56,16 +56,12 @@ a:active {
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
-
-
 }
 
 
 .container-2 input#search::-webkit-input-placeholder {
   color: #65737e;
 }
-
-
 
 .container-2 .icon{
   position: absolute;
@@ -74,8 +70,6 @@ a:active {
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
-
-  /*///не понял как, но с этим работает*/
   right: 90%;
 }
 
@@ -93,8 +87,6 @@ a:active {
   color: #93a2ad;
 }
 
-
-
 #block {
 
   padding-left: 30%;
@@ -110,8 +102,5 @@ a:active {
   overflow: hidden;
   border-radius: 5px;
   z-index: 1;
-  /*display: block;*/
-  /*position: absolute;*/
-  /*content: ' ';*/
 }
 
